@@ -1,51 +1,72 @@
 # Recursion Practice
 
-Write a recursive solution to each of the following problems. They are organized in increasing difficulty, beginning with the easiest. 
+This exercise is designed to help you develop your understanding of **recursion** in Java. Recursion is a powerful technique where a method calls itself to solve smaller instances of a problem.
 
-## 1. Count Up Timer
-Write a recursive function `countUp(int n)` that takes a parameter n (the stopping number) and prints numbers starting from 1 up to n.
+## How to Think Recursively
 
-## 2. Sum of Natural Numbers
-Natural numbers include all positive integers from 1 to infinity, not including zero. Write a recursive function `sum(int n)` that calculates the sum of all numbers from 1 to n.
+Each recursive function should follow this structure:
 
-## 3. Even Numbers in a Range
-Write a recursive function `printEvens(int start, int end)` that prints all even numbers between start and end (inclusive).
+1. **Base Case:**  
+   What is the simplest version of the problem that you can solve directly, without any further recursion?
 
-## 4. Reverse a String
-Write a recursive function `reverse(String s)` that takes a string s and returns it reversed.
+2. **Recursive Case:**  
+   Break the problem into a smaller version of itself. Call the same function with a simpler input.
 
-## 5. Check if a String is a Palindrome
-Write a recursive function `isPalindrome(String s)` to check if a string is a palindrome.
+3. **Trust the Recursion:**  
+   Don't try to follow every recursive call in your head! Write the base case, write the recursive case, and assume the method works as promised for the smaller version.
 
-## 6. Power Function
-Write a recursive function `power(int base, int exponent)` that computes base raised to the power of exponent.
+<br>
 
-*Example:* `power(2, 3) → 8`
+# Practice Problems
 
-## 7. Decimal to Binary Conversion
-Write a recursive function `toBinary(int n)` that converts a decimal number n to its binary representation as a string.
+The problems below are organized in **three tiers**. You should work through them in order. Try to complete all problems in Tier 1 and Tier 2. Tier 3 is **optional** and more challenging.
 
-*Example:* `toBinary(10) → "1010"`
+## Tier 1: Basic Recursion
 
-## 8. Sum of Digits
-Write a recursive function `sumOfDigits(int n)` that calculates the sum of the digits of an integer n.
+### 1. Count Down Timer
+Write a recursive function `countDown(int n)` that prints numbers from `n` down to `1`.
 
-*Example:* `sumOfDigits(1234) → 1 + 2 + 3 + 4 = 10`
 
-## 9. Array Sum
-Write a recursive function `sumArray(int[] arr, int n)` that calculates the sum of the first n elements in an array.
+### 2. Sum of Natural Numbers
+Write a recursive function `sum(int n)` that returns the sum of numbers from `1` to `n`.
 
-*Example:* `sumArray([1, 2, 3, 4], 4) → 10`
 
-## 10. Find Maximum in an Array
-Write a recursive function `findMax(int[] arr, int n)` to find the maximum value in the first n elements of an array.
+### 3. Even Numbers in a Range
+Write a recursive function `printEvens(int start, int end)` that prints all even numbers between `start` and `end` (inclusive).
 
-## 11. Count Occurrences of a Character
-Write a recursive function `countChar(String s, char c)` that counts how many times the character c appears in the string s.
+## Tier 2 – Strings and Numbers
 
-*Example:* `countChar("hello", 'l') → 2`
+### 4. Reverse a String
+Write a recursive function `reverse(String s)` that returns the reversed string.
 
-## 12. Subsets of a Set
-Write a recursive function `generateSubsets(String s)` to print all subsets of a string s.
+### 5. Check if a String is a Palindrome
+Write a recursive function `isPalindrome(String s)` that returns `true` if the string is a palindrome.
 
-*Example:* `generateSubsets("abc") → "", "a", "b", "c", "ab", "ac", "bc", "abc"`
+### 6. Power Function
+Write a recursive function `power(int base, int exponent)` that computes base to the power of exponent.  
+Example: `power(2, 3) → 8`
+
+### 7. Decimal to Binary
+Write a recursive function `toBinary(int n)` that returns the binary representation of `n` as a string.  
+Example: `toBinary(10) → "1010"`
+
+### 8. Sum of Digits
+Write a recursive function `sumOfDigits(int n)` that returns the sum of all digits in `n`.  
+Example: `sumOfDigits(1234) → 10`
+
+## Tier 3: Arrays and Advanced Practice
+
+### 9. Sum of Array
+Write a recursive function `sumArray(int[] arr, int n)` that returns the sum of the first `n` elements of the array.  
+Example: `sumArray([1, 2, 3, 4], 4) → 10`
+
+### 10. Find Maximum in an Array
+Write a recursive function `findMax(int[] arr, int n)` that returns the max value in the first `n` elements of an array.
+
+### 11. Count Occurrences of a Character
+Write a recursive function `countChar(String s, char c)` that returns how many times `c` appears in the string `s`.  
+Example: `countChar("hello", 'l') → 2`
+
+### 12. Generate Subsets of a String
+Write a recursive function `generateSubsets(String s)` that prints all subsets of the string.  
+Example: `generateSubsets("abc") → "", "a", "b", "c", "ab", "ac", "bc", "abc"`

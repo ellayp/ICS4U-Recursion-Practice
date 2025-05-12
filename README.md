@@ -1,6 +1,6 @@
 # Recursion Practice
 
-This exercise is designed to help you develop your understanding of **recursion** in Java. Recursion is a powerful technique where a method calls itself to solve smaller instances of a problem.
+This exercise is designed to help you develop your understanding of recursion in Java. Recursion is a powerful technique where a method calls itself to solve smaller instances of a problem.
 
 ## How to Think Recursively
 
@@ -34,7 +34,7 @@ Write a recursive function `sum(int n)` that returns the sum of numbers from `1`
 ### 3. Even Numbers in a Range
 Write a recursive function `printEvens(int start, int end)` that prints all even numbers between `start` and `end` (inclusive).
 
-## Tier 2 – Strings and Numbers
+## Tier 2: Strings and Numbers
 
 ### 4. Reverse a String
 Write a recursive function `reverse(String s)` that returns the reversed string.

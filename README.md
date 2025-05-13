@@ -17,56 +17,64 @@ Each recursive function should follow this structure:
 
 <br>
 
-# Practice Problems
+# Additional Practice Problems
 
 The problems below are organized in **three tiers**. You should work through them in order. Try to complete all problems in Tier 1 and Tier 2. Tier 3 is **optional** and more challenging.
 
 ## Tier 1: Basic Recursion
 
-### 1. Count Down Timer
-Write a recursive function `countDown(int n)` that prints numbers from `n` down to `1`.
+### 1. Print N Times
+Write a recursive function `printNTimes(String word, int n)` that prints the given `word` exactly `n` times.  
+Example: `printNTimes("hi", 3)` → prints:  
 
+```
+hi  
+hi  
+hi
+```
 
-### 2. Sum of Natural Numbers
-Write a recursive function `sum(int n)` that returns the sum of numbers from `1` to `n`.
+### 2. Print Digits of a Number
+Write a recursive function `printDigits(int n)` that prints each digit of `n` on a separate line, from most significant to least.  
+Example: `printDigits(431)` →  
 
+```
+4  
+3  
+1
+```
 
-### 3. Even Numbers in a Range
-Write a recursive function `printEvens(int start, int end)` that prints all even numbers between `start` and `end` (inclusive).
+### 3. Count Occurrences of a Number
+Write a recursive function `countOccurrences(int[] arr, int n, int target)` that counts how many times `target` appears in the first `n` elements of the array.  
+Example: `countOccurrences([1, 2, 3, 2, 4], 5, 2)` → `2`
 
-## Tier 2: Strings and Numbers
+## Tier 2: Intermediate Practice
 
-### 4. Reverse a String
-Write a recursive function `reverse(String s)` that returns the reversed string.
+### 4. Replace Character in a String
+Write a recursive function `replaceChar(String s, char target, char replacement)` that returns a new string where all occurrences of `target` are replaced with `replacement`.  
+Example: `replaceChar("banana", 'a', 'o') → "bonono"`
 
-### 5. Check if a String is a Palindrome
-Write a recursive function `isPalindrome(String s)` that returns `true` if the string is a palindrome.
+### 5. GCD (Greatest Common Divisor)
+Write a recursive function `gcd(int a, int b)` that returns the greatest common divisor of `a` and `b` using the Euclidean algorithm.  
+Example: `gcd(48, 18)` → `6`
 
-### 6. Power Function
-Write a recursive function `power(int base, int exponent)` that computes base to the power of exponent.  
-Example: `power(2, 3) → 8`
+### 6. Recursive String Clean
+Write a recursive function `cleanString(String s)` that returns a string where *consecutive duplicate characters* are reduced to a single one.  
+Example: `cleanString("aaabbccdaa") → "abcda"`
 
-### 7. Decimal to Binary
-Write a recursive function `toBinary(int n)` that returns the binary representation of `n` as a string.  
-Example: `toBinary(10) → "1010"`
+## Tier 3: Advanced Recursion Challenges
 
-### 8. Sum of Digits
-Write a recursive function `sumOfDigits(int n)` that returns the sum of all digits in `n`.  
-Example: `sumOfDigits(1234) → 10`
+### 7. Recursive Linear Search
+Write a recursive function `linearSearch(int[] arr, int n, int target)` that returns the **index** of the first occurrence of `target` in the first `n` elements of the array. Return `-1` if not found.  
+Example: `linearSearch([5, 3, 7, 3], 4, 3)` → `1`
 
-## Tier 3: Arrays and Advanced Practice
+### 8. All Indices of a Target
+Write a recursive function `allIndices(int[] arr, int n, int target)` that returns a list of all indices where `target` appears in the first `n` elements.  
+Example: `allIndices([1, 2, 3, 2, 4], 5, 2)` → `[1, 3]`
 
-### 9. Sum of Array
-Write a recursive function `sumArray(int[] arr, int n)` that returns the sum of the first `n` elements of the array.  
-Example: `sumArray([1, 2, 3, 4], 4) → 10`
-
-### 10. Find Maximum in an Array
-Write a recursive function `findMax(int[] arr, int n)` that returns the max value in the first `n` elements of an array.
-
-### 11. Count Occurrences of a Character
-Write a recursive function `countChar(String s, char c)` that returns how many times `c` appears in the string `s`.  
-Example: `countChar("hello", 'l') → 2`
-
-### 12. Generate Subsets of a String
-Write a recursive function `generateSubsets(String s)` that prints all subsets of the string.  
-Example: `generateSubsets("abc") → "", "a", "b", "c", "ab", "ac", "bc", "abc"`
+### 9. Recursive String Permutations
+Write a recursive function `generatePermutations(String s)` that prints all permutations of the characters in the string.  
+Example: `generatePermutations("ab")` → prints:  
+```
+ab  
+ba
+```
